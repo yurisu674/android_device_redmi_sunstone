@@ -11,6 +11,9 @@ LOCAL_PATH := device/xiaomi/munch
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # A/B
 ENABLE_VIRTUAL_AB := true
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -42,7 +45,7 @@ PRODUCT_PACKAGES += \
     bootctrl.kona \
     bootctrl.kona.recovery
 
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
 
 # PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 #     bootctrl.kona \
@@ -61,6 +64,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+	android.hardware.fastboot@1.0-impl-mock.recovery \
+    fastbootd
 
 # Soong Namespaces : Qcom commonsys Display
 PRODUCT_SOONG_NAMESPACES += \
