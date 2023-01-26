@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),munch)
+ifeq ($(TARGET_DEVICE),sunstone)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
