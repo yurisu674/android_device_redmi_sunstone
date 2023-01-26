@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/xiaomi/munch
+LOCAL_PATH := device/qualcomm/sunstone
 
 # API
 PRODUCT_TARGET_VNDK_VERSION := 30
@@ -42,13 +42,13 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl \
     android.hardware.boot@1.1-service \
-    bootctrl.kona \
-    bootctrl.kona.recovery
+    bootctrl.holi \
+    bootctrl.holi.recovery
 
 # PRODUCT_PACKAGES += \
 
 # PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-#     bootctrl.kona \
+#     bootctrl.holi \
 #     libgptutils \
 #     libz \
 #     libcutils
