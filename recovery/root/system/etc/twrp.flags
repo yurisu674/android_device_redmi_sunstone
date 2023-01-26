@@ -14,7 +14,7 @@
 
 # AVB Partition
 /vbmeta             emmc    /dev/block/bootdevice/by-name/vbmeta                 flags=slotselect;display="VBMeta Image";backup=1;flashimg=1
-/vbmeta_system      emmc    /dev/block/bootdevice/by-name/vbmeta_system		     flags=slotselect;display="VBMeta_System Image";backup=1;flashimg=1
+/vbmeta_system      emmc    /dev/block/bootdevice/by-name/vbmeta_system		       flags=slotselect;display="VBMeta_System Image";backup=1;flashimg=1
 
 # Modem Partition
 /modem              emmc    /dev/block/bootdevice/by-name/modem                  flags=slotselect;display="Modem Image";backup=1;flashimg=1
