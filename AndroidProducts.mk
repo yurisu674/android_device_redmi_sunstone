@@ -6,7 +6,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_sunstone.mk
-
-COMMON_LUNCH_CHOICES := \
-    twrp_sunstone-eng
+    $(LOCAL_DIR)/sunstone.mk
+    
