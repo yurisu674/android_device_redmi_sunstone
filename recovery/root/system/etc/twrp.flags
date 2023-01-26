@@ -7,7 +7,7 @@
 /boot               emmc    /dev/block/bootdevice/by-name/boot                   flags=slotselect;display="Boot Image";backup=1;flashimg=1
 /vendor_boot        emmc    /dev/block/bootdevice/by-name/vendor_boot            flags=slotselect;display="Vendor_Boot Image";backup=1;flashimg=1
 /dtbo               emmc    /dev/block/bootdevice/by-name/dtbo                   flags=slotselect;display="DTBo Image";backup=1;flashimg=1
-/splash           	emmc    /dev/block/bootdevice/by-name/splash                 flags=display="Splash Image";flashimg=1;backup=1
+/splash             emmc    /dev/block/bootdevice/by-name/splash                 flags=display="Splash Image";flashimg=1;backup=1
 
 /cust               ext4    /dev/block/bootdevice/by-name/cust                   flags=display="Cust";backup=0
 /cust_image         emmc    /dev/block/bootdevice/by-name/cust                   flags=display="Cust Image";backup=1;flashimg=1
