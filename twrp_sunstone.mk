@@ -15,14 +15,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Inherit from munch device
-$(call inherit-product, device/xiaomi/munch/device.mk)
+$(call inherit-product, device/qualcomm/sunstone/device.mk)
 
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := munch
-PRODUCT_NAME := twrp_munch
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO F4
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_DEVICE := sunstone
+PRODUCT_NAME := twrp_sunstone
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := 22101317C
+PRODUCT_MANUFACTURER := qualcomm
